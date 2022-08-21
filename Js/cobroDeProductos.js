@@ -33,7 +33,7 @@ const calculoDescuento = (valor) => {
    totalPagar = total - descuentos + iva; //Realizamos el calculo para mostrar el prresio Final a Pagar
 
    return alert(
-    `¡¡Termino la carga!!. \nSubTotal: ${total}\n${p}% Descuento: ${descuentos} \nValor del IVA: ${iva} \nTotal a Pagar: ${totalPagar}.`
+    `¡¡Termino la carga!!. \nSubTotal: ${total}\n\nDESCUENTOS:\n${p}% Descuento: ${descuentos} \n\nINCREMENTOS:\nValor del IVA: ${iva} \nTOTAL A PAGAR: ${totalPagar}.`
   );
  }
 
