@@ -1,3 +1,4 @@
+//Creamos variables globales que necesitaremos a lo largo del programa
 let continuar = 1; //creamos la variable que servira para la condicion del while
 let AcumPresios = 0;
 let descuento = 0;
