@@ -8,8 +8,8 @@ let totalPagar = 0;
 const valorIva = (x) => x * 0.21; //obtengo el valor del IVA (21%)
 
 //Con la siguiente funcion recibo el valor del producto cargado y devuelvo la suma de todos los productos que recibio en el ciclo while
-const sumarProductos = (productos) => { 
-  return (AcumPresios = AcumPresios + productos);
+const sumarProductos = productos => { 
+   (AcumPresios = AcumPresios + productos);
 };
 
 /* Con la siguiente funcion realizo el calculo del descuento que le corresponde, dependiendo del total que tiene acumualado para pagar
@@ -17,7 +17,7 @@ _Si el valor es mayor a 5000 pesos  y menor a 8000 pesos, le corresponde un desc
 _Si es mayor o igual a 8000 pesos obtiene un descuento del 10%
 _Si el valor total es menor o igual a 5000, no corresponden descuentos.
 */
-const calculoDescuento = (valor) => {
+const calculoDescuento = valor => {
   if (valor > 5000 && valor < 8000) {
     return (descuento = AcumPresios * 0.05);
   } else if (valor >= 8000) {
@@ -32,8 +32,8 @@ const calculoDescuento = (valor) => {
  const mostrarPantalla= (total,iva,descuentos,p)=>{
    totalPagar = total - descuentos + iva; //Realizamos el calculo para mostrar el prresio Final a Pagar
 
-   return alert(
-    `¡¡Termino la carga!!. \nSubTotal: ${total}\n\nDESCUENTOS:\n${p}% Descuento: ${descuentos} \n\nINCREMENTOS:\nValor del IVA: ${iva} \nTOTAL A PAGAR: ${totalPagar}.`
+    alert(
+    `¡¡Termino la carga!!. \nSubTotal: $${total}\n\nDESCUENTO CORRESPONDIENTE:\n${p}% Descuento aplicado: $${descuentos} \n\nINCREMENTAMOS EL VALOR DEL IVA:\n\nValor del IVA (21%): $${iva} \nTOTAL A PAGAR: $${totalPagar}.`
   );
  }
 
